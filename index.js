@@ -1,11 +1,30 @@
-class pessoa {
+var obj = {};
 
+var pessoa = function();
+
+var pessoa = new Pessoa();
+
+var Carro = function (marca, nome) {
+    this.marca = marca;
+    this.nome = nome;
 }
 
-class pessoaFisica extends pessoa {
+var Carro1 = new Carro('vw', 'gol');
+alert(Carro1);
 
+var pessoaJuridica = function () {
+    var cnpj;
+
+    this.getCNPJ = function () {
+        return cnpj;
+    }
+
+    this.setCNPJ = function (value) {
+        return cnpj;
+    }
 }
 
-class pessoaJuridica extends pessoa {
-    
+var gato = {
+    nome: 'Manda-Chuva',
+    cor: 'cinza'
 }
